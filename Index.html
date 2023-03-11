@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/6cb1f6af4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Reproductor</title>
+</head>
+<body>
+    <h1>Reproductor de Musica</h1>
+<div class="music-container">
+    <div class="music-info">
+        <h4 id="title"></h4>
+        <h5 id="autor"></h5>
+        <h5 id="cantante"></h5>
+        <div class="barra-progreso">
+            <div class="progreso"></div>
+        </div>
+    </div>
+        <audio src="music/Out of the box.mp3" id="audio"></audio>
+        <div class="imagen">
+            <img src="imagenes/Out of the box.jpg" alt="portada-musica" id="portada">
+        </div>
+
+        <div class="navi">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            <button id="repeat" class="action-btn">
+                <i class="fas fa-repeat"></i>
+            </button>
+        </div>
+</div>
+<div class="comentarios">
+    <form>
+        <h3>Usuario:</h3>
+        <input id="user" required>
+        <h3>¿Te gusta la canción? Dejanos un comentario!</h3>
+        <input id="comentario" required>
+    <div class="post">
+        <button id="postear" type="submit">Post</button>
+        <br><br>
+        <div id="cuadrocoment" class="cuadrocomentario">
+        
+        </div>
+</div>
+</form>
+    <script src="base.js"></script>
+</body>
+</html>
